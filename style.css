@@ -1,0 +1,406 @@
+*{
+    box-sizing:border-box;
+    font-family:"Segoe UI", Tahoma, sans-serif;
+}
+
+
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top,#172554,#020617 70%);
+
+    color:white;
+
+}
+
+
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+    linear-gradient(
+    rgba(56,189,248,.05) 1px,
+    transparent 1px
+    ),
+    linear-gradient(
+    90deg,
+    rgba(56,189,248,.05) 1px,
+    transparent 1px
+    );
+
+    background-size:45px 45px;
+
+    pointer-events:none;
+
+}
+
+
+
+/* الصفحات العامة */
+
+.landing{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+
+
+.logo-box{
+
+    width:100%;
+
+    max-width:520px;
+
+    text-align:center;
+
+}
+
+
+
+.logo-box h1{
+
+    font-size:55px;
+
+    font-weight:900;
+
+    color:#38bdf8;
+
+}
+
+
+
+.logo-box h2{
+
+    color:#cbd5e1;
+
+}
+
+
+
+
+
+/* الكروت */
+
+.card{
+
+    background:rgba(15,23,42,.9);
+
+    border:1px solid rgba(56,189,248,.2);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin:15px 0;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+
+
+.card h3{
+
+    color:#38bdf8;
+
+}
+
+
+
+
+
+/* الازرار */
+
+button{
+
+
+    width:90%;
+
+
+    padding:14px 20px;
+
+
+    margin:8px;
+
+
+    border-radius:14px;
+
+
+    border:1px solid rgba(56,189,248,.35);
+
+
+    background:#111827;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+
+    background:#1e293b;
+
+
+    border-color:#38bdf8;
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:0 0 20px rgba(56,189,248,.3);
+
+
+}
+
+
+
+button:active{
+
+    transform:scale(.97);
+
+}
+
+
+
+
+/* الحقول */
+
+input{
+
+
+    width:90%;
+
+
+    padding:15px;
+
+
+    margin:8px;
+
+
+    border-radius:12px;
+
+
+    border:1px solid #334155;
+
+
+    background:#020617;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    outline:none;
+
+
+}
+
+
+
+input:focus{
+
+
+    border-color:#38bdf8;
+
+
+}
+
+
+
+
+
+/* تسجيل الدخول */
+
+
+.login-page{
+
+
+    min-height:100vh;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    padding:20px;
+
+
+}
+
+
+
+.login-box{
+
+
+    width:100%;
+
+
+    max-width:400px;
+
+
+    background:rgba(15,23,42,.95);
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+    border:1px solid rgba(56,189,248,.3);
+
+
+    box-shadow:0 20px 50px rgba(0,0,0,.5);
+
+
+}
+
+
+
+.login-box h1{
+
+
+    font-size:50px;
+
+
+    color:#38bdf8;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.login-box p{
+
+
+    color:#cbd5e1;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.input-box{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    background:#020617;
+
+
+    border:1px solid #334155;
+
+
+    border-radius:15px;
+
+
+    padding:5px 15px;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+.input-box span{
+
+
+    font-size:22px;
+
+
+}
+
+
+
+.input-box input{
+
+
+    border:0;
+
+
+    background:transparent;
+
+
+    margin:0;
+
+
+    width:100%;
+
+
+}
+
+
+
+.input-box input:focus{
+
+
+    box-shadow:none;
+
+
+}
+
+
+
+.secondary{
+
+
+    background:#1e293b;
+
+}
